@@ -1,0 +1,5 @@
+*.class
+dist/
+spm_output/
+XML_TRANSACTIONS/
+test/

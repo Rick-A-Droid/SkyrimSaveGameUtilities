@@ -1,0 +1,127 @@
+<html>
+
+<head>
+<title>Skyrim Potion Maker Help Page</title>
+<style>
+<!--
+body         { font-family: Tahoma }
+-->
+</style>
+</head>
+<body bgcolor="#00002B" text="#FFFFFF" link="#CCFFFF" vlink="#F2D7FF">
+<table border="2" width="100%" cellspacing="4" cellpadding="6" bordercolor="#000000" bgcolor="#000000">
+	<tr>
+		<td bordercolor="#CCCCCC" bgcolor="#003399">
+		<font face="Arial Black" size="6" color="#FFE7CE">PC Sync XML Help Page</font></td>
+	</tr>
+</table>
+
+<body>
+
+<table border="1" width="100%">
+	<tr>
+		<td>
+			<b><font size="4" color="#FFC5AE">ON/OFF Button</font></b><blockquote>
+				<p>
+				<input type="button" value=" OFF" name="B8" style="font-size: 14pt; color: #FF0000; font-family:monospace; font-weight:bold">&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp; <font face="Arial Unicode MS">The function is OFF.&nbsp; Click it to 
+			start it.</font></p>
+			</blockquote>
+			</p>
+			<blockquote>
+				<input type="button" value=" ON " name="B7" style="font-size: 14pt; color: #008000; font-family:monospace; font-weight:bold; text-align:center"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				</font>The function is ON.&nbsp; Click it to stop it.</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><font size="4" color="#FFC5AE"><b>Directories</b></font><blockquote>
+			<p>In the application's directory you will find the following 
+			directory structure:</p>
+			<p><font face="Courier New" color="#FFFFCC">XML_TRANSACTIONS<br>
+&nbsp;&nbsp;&nbsp;&nbsp; XML_in<br>
+&nbsp;&nbsp;&nbsp;&nbsp; XML_Out_Effects<br>
+&nbsp;&nbsp;&nbsp;&nbsp; XML_Out_Ingredients</font></p>
+			<table border="1" cellpadding="4">
+				<tr>
+					<td><font face="Courier New" color="#FFFFCC">XML_in</font></td>
+					<td>This is where the XML files exported from the Android 
+					App are placed.&nbsp; Existing files will always be 
+					over-written.&nbsp; So, be sure to rename or move any you 
+					want to keep.</td>
+				</tr>
+				<tr>
+					<td><font face="Courier New" color="#FFFFCC">XML_Out_Effects</font></td>
+					<td>This is where you need to put the edited effects XML 
+					file you want to <font color="#FFE7CE"><b>Import</b></font> 
+					to the Android App.&nbsp; You should only put one file at a 
+					time in this directory.&nbsp; Otherwise, it sends the first 
+					file found.</td>
+				</tr>
+				<tr>
+					<td><font face="Courier New" color="#FFFFCC">
+					XML_Out_Ingredients</font></td>
+					<td>This is where you need to put the edited ingredients XML 
+					file you want to <font color="#FFE7CE"><b>Import</b></font> 
+					to the Android App.&nbsp; You should only put one file at a 
+					time in this directory.&nbsp; Otherwise, it sends the first 
+					file found.</td>
+				</tr>
+			</table>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">How it works</font></b><blockquote>
+			<p>When PC Sync XML is enabled, you can use the Android App to 
+			Export and Import XML files (see the Android App's help screens for 
+			more info):</p>
+			<p><b>Export</b> - </p>
+			<blockquote>
+				<p>When you use the Android App to export an Effects or 
+				Ingredients XML file, it is saved to the
+				<font face="Courier New" color="#FFFFCC">XML_in</font> 
+				directory.&nbsp; When you have made your changes, put the 
+				changed file in the appropriate <font color="#FFFFCC">XML_Out</font> 
+				directory, and use the Android App's Import function.</p>
+				<p>If a file already exists in the
+				<font face="Courier New" color="#FFFFCC">XML_in</font> with the 
+				same filename, it over-writes the existing file.&nbsp; So be 
+				sure to move or rename any file(s) you want to keep.</p>
+			</blockquote>
+			<p><b>Import</b> - </p>
+			<blockquote>
+				<p>When you tell the Android App to import an Effects or 
+				Ingredients file, it sends the PC a request that specifies that 
+				it wants an Effects or Ingredients file.&nbsp; The request tells 
+				the PC program to get the file from the
+				<font face="Courier New" color="#FFFFCC">XML_Out_Effects</font> 
+				or <font face="Courier New" color="#FFFFCC">XML_Out_Ingredients</font> 
+				directory.&nbsp; </p>
+				<p>The PC program just sends the file from the chosen directory.&nbsp; 
+				It does not parse the file.&nbsp; It just sends it as a stream 
+				of bytes.&nbsp; The filename is also sent in that stream.</p>
+				<p>Since the Android App does not know the name of the file you 
+				want to import, when it requests an Effects or Ingredients file, 
+				the PC application will send the first file it finds in the 
+				appropriate directory.&nbsp; The Android App will save the 
+				imported file in the App's private storage using the same 
+				filename.</p>
+				<p>This is not the same directory the default XML files are in.&nbsp; 
+				You cannot change or delete the default files.&nbsp; You do not 
+				need to change the filename(s) unless you want to import more 
+				than one file and keep both.</p>
+			</blockquote>
+		</blockquote>
+		</td>
+	</tr>
+	</table>
+<p><font size="5" color="#FFC5AE">Links:</font></p>
+<blockquote>
+	<p><a href="MainHelpFile.html">Main screen</a></p>
+	<p><a href="savior.html">Savegame Savior</a></p>
+	<p><a href="spm.html">Skyrim Potion Maker</a></p>
+</blockquote>
+
+</body>
+
+</html>

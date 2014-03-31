@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<title>Skyrim Potion Maker Help Page</title>
+<style>
+<!--
+body         { font-family: Tahoma }
+-->
+</style>
+</head>
+<body bgcolor="#00002B" text="#FFFFFF" link="#CCFFFF" vlink="#F2D7FF">
+<table border="2" width="100%" cellspacing="4" cellpadding="6" bordercolor="#000000" bgcolor="#000000">
+	<tr>
+		<td bordercolor="#CCCCCC" bgcolor="#003399">
+		<font face="Arial Black" size="6" color="#FFE7CE">Skyrim Potion Maker Help Page</font></td>
+	</tr>
+</table>
+
+<body>
+
+<table border="1" width="100%">
+	<tr>
+		<td>
+			<b><font size="4" color="#FFC5AE">ON/OFF Button</font></b><blockquote>
+				<p>
+				<input type="button" value=" OFF" name="B8" style="font-size: 14pt; color: #FF0000; font-family:monospace; font-weight:bold">&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp; <font face="Arial Unicode MS">The function is OFF.&nbsp; Click it to 
+			start it.</font></p>
+			</blockquote>
+			</p>
+			<blockquote>
+				<input type="button" value=" ON " name="B7" style="font-size: 14pt; color: #008000; font-family:monospace; font-weight:bold; text-align:center"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				</font>The function is ON.&nbsp; Click it to stop it.</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">Your PC's IP Address</font></b><blockquote>
+			<p>Your PC's IP Address is displayed here.&nbsp; This is the IP you 
+			need to enter on the <b>Network Setup</b> page of the Skyrim Potion 
+			Maker app.</p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">Port:</font></b><blockquote>
+			<p>This is a 4-digit number of the Port that the PC will listen on.&nbsp; 
+			It needs to be the same number as the one entered on the <b>Network 
+			Setup</b> page of the Skyrim Potion Maker app.</p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">Check Boxes</font></b><blockquote>
+			<p>Here you can set what types of saves the PC looks for.&nbsp; It 
+			will never look for autosaves.</p>
+			<ul type="square">
+				<li>Quicksaves - If checked, quicksaves will be used (it does 
+				not matter if Savior is also running and renaming them).</li>
+				<li>Fullsaves - If checked, the fullsaves will be used.</li>
+				<li>Other saves - If you are using other mods that save the game 
+				with another filename, enter the first part of the filename 
+				(that does not change) here, and check the box.</li>
+			</ul>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">Status Window</font></b><blockquote>
+			<p>The window displays messages to indicate its progress.</p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><font size="4" color="#FFC5AE"><b>WIFI</b></font><b><font color="#FFC5AE" size="4"> 
+		Connection</font></b><blockquote>
+			<p>If you are connecting your Android phone to your system's WIFI, 
+			you may need to set your broadband router to send unsolicited 
+			traffic to your PC.&nbsp; On my <font color="#FFFF00">Netgear</font> 
+			broadband router, that I use with AT&amp;T broadband, I found the 
+			setting under <font face="Courier New" color="#FFFF00">Advanced -&gt; 
+			Connection Configuration</font>.</p>
+			<p>Where it says: <font color="#FFFF00">Current settings for 
+			unsolicited traffic is Dropped.</font> (which is the default), I 
+			changed it to <font color="#FFFF00">IP Passthrough</font> in the 
+			drop-down box.</p>
+			<p>In <font color="#FFFF00">Please select the device to receive all 
+			unsolicited traffic</font> I chose the name of my PC.</p>
+			<p>In <font color="#FFFF00">IP Address:</font> I entered the IP 
+			address displayed in <b><font color="#FFC5AE" size="4">Your PC's IP 
+			Address</font></b> </p>
+			<p>Although this worked for me, I do not know if this opens any 
+			possible security issues in allowing unsolicited traffic into the 
+			PC.&nbsp; You should read the documentation that came with your 
+			router to determine what to do and consider if you can add any 
+			additional security options to it.</p>
+			<p>Personally, I disable the unsolicited traffic thing in my router 
+			when I am not playing the game.</p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">USB Connection</font></b><blockquote>
+			<p>This is the easiest way to connect your phone to your PC and does 
+			not require any additional work to be done to get the communcations 
+			between the phone and PC to work.&nbsp; </p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td><b><font color="#FFC5AE" size="4">How it works</font></b><blockquote>
+			<p>When the Directory Watcher detects that a new file has been 
+			created in the Savegame directory, it wakes up this program.&nbsp; 
+			If the filename is one of the ones selected (quicksave, fullsave, 
+			and/or another type) the program reads the savegame file to extract 
+			the alchemy information.&nbsp; It builds a ZIP file in the<font face="Courier New" color="#FFFF00"> 
+			/spm_output</font> directory, named
+			<font color="#FFFF00" face="Courier New">spm_out.zip</font> </p>
+			<p>The ZIP file contains two files.&nbsp; The first is a text file 
+			with a response string.&nbsp; All responses from the PC have this 
+			file.&nbsp; The text is used by the Android app to determine what 
+			the response from the PC is.</p>
+			<p>The second file is an XML file containing the following:</p>
+			<ul>
+				<li>The name of your character.</li>
+				<li>The DLCs and Mods found that have added Ingredients and/or 
+				effects to the game.</li>
+				<li>The Ingredients (by their BaseID) and a flag that indicates 
+				whether you have discovered each of the Ingredient's 4 effects.</li>
+			</ul>
+			<p>This data is used by the Android app to look up the actual 
+			Ingredient (using its BaseID) from the ingredients information that 
+			the app has in its XML files.&nbsp; If an Ingredient cannot be 
+			found, it will display an error message.&nbsp; If this happens you 
+			need to edit the app's XML files to add any additional ingredients 
+			added or changed by other mods.&nbsp; See the help files in the 
+			Skyrim Potion Maker app.</p>
+			<p>If you are doing alchemy in the game, discovering other effects, 
+			and wish to update the Android app, you will need to do another 
+			savegame, and then retrieve the updated data from the app.</p>
+		</blockquote>
+		</td>
+	</tr>
+</table>
+<p><font size="5" color="#FFC5AE">Links:</font></p>
+<blockquote>
+	<p><a href="MainHelpFile.html">Main screen</a></p>
+	<p><a href="savior.html">Savegame Savior</a></p>
+	<p><a href="pcsync.html">PC Sync XML</a></p>
+</blockquote>
+
+</body>
+
+</html>

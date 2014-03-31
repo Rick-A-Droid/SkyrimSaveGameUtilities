@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 3, 2014, 1:59:26 PM
+    Author     : Rick
+*/
+
+.theme {
+    -fx-background-color: 
+        linear-gradient(to bottom, black, lightgrey);
+}
+
+.titlebar{
+    master-color: #FAE3C3;
+	-fx-background-color: linear-gradient(to bottom,
+            derive(master-color, 80.0%), 
+            derive(master-color, 10.0%)
+        ); 
+    
+}
+
+.text-input {
+    -fx-background-color: #fffff3;
+    -fx-border-width:0.5mm;
+    -fx-border-color: #000000;
+    -fx-font-family: Ariel;
+    -fx-font-size: 14.0px;
+    -fx-text-fill: black;
+}
+
+.titletext {
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.45) , 5.0, 0.0 , 3.5 , 3.5 );
+}
+
+.button1 {
+    master-color: #EDDBCC;
+    -fx-background-color:
+        linear-gradient(to bottom,
+        derive(master-color, 80.0%), 
+        derive(master-color, 10.0%)
+        );        
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.85) , 5.0, 0.0 , 4.0 , 4.0 );
+    -fx-padding: 4.0 9.0 4.0 9.0;
+    -fx-text-alignment: center;
+}
+
+.floatingpanel {
+    master-color: #F0FaFC;
+    -fx-background-color:
+        linear-gradient(to top,
+        derive(master-color, 80.0%), 
+        derive(master-color, 10.0%)
+        );        
+    -fx-border-width:0.5mm;
+    -fx-border-color: #000000;
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.85) , 5.0, 0.0 , 4.0 , 4.0 );  
+}
+
+.helpbutton {
+    master-color: #bb0000;
+    -fx-background-color:
+        linear-gradient(to bottom,
+        derive(master-color, 80.0%), 
+        derive(master-color, 10.0%)
+        );        
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.85) , 5.0, 0.0 , 4.0 , 4.0 );
+    -fx-padding: 3.0 12.0 3.0 12.0;
+    -fx-text-alignment: center;
+}
+
+.projectlabel {
+    -fx-background-color: #ffffff;
+    -fx-font-family: Ariel;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.page {
+    master-color: #1F150C;
+    -fx-background-color: linear-gradient(to bottom,
+        derive(master-color, 90.0%), 
+        derive(master-color, 10.0%)
+        ); 
+}
+
+.directoryborder {
+    master-color: #736757;
+    -fx-border-width:0.5mm;
+    -fx-border-color: #000000;
+   
+    -fx-background-color: linear-gradient(to left,
+        derive(master-color, 90.0%), 
+        derive(master-color, 50.0%)
+        ); 
+}
+
+.border {
+    master-color: #736757;
+    -fx-border-width:0.5mm;
+    -fx-border-color: #000000;
+    -fx-background-color: #fffff0;
+}
+
+.hboxProjectName {
+    -fx-border-width: 1.0mm;
+    -fx-border-color: #000000;
+    -fx-background-color: #fffaf0;
+}
+
+.hboxError {
+    -fx-border-width: 1.0mm;
+    -fx-border-color: #000000;
+    -fx-background-color: #ffffff;
+}

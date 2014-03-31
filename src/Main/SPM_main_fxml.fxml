@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet SPM_css.css?>
+
+<AnchorPane id="AnchorPane" prefHeight="791.0" prefWidth="854.0" styleClass="page" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Main.SPM_Controller">
+  <children>
+    <VBox prefHeight="614.0" prefWidth="618.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox prefHeight="-1.0" prefWidth="618.0" styleClass="titlebar" VBox.vgrow="NEVER">
+          <children>
+            <Label fx:id="mLBL_Title" style="" styleClass="titletext" text="Skyrim Save-Game Watcher">
+              <font>
+                <Font name="Arial Black" size="28.0" />
+              </font>
+            </Label>
+          </children>
+          <padding>
+            <Insets bottom="3.0" left="12.0" right="3.0" top="3.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="606.0" styleClass="directoryborder" VBox.vgrow="NEVER">
+          <children>
+            <Button id="mBTN_Directory_Button" fx:id="mBTN_Directory" mnemonicParsing="false" styleClass="button1" text="Directory">
+              <font>
+                <Font name="System Bold" size="16.0" fx:id="x1" />
+              </font>
+              <HBox.margin>
+                <Insets bottom="4.0" left="6.0" right="20.0" top="4.0" />
+              </HBox.margin>
+            </Button>
+            <Label fx:id="mLBL_Directory" minHeight="-Infinity" prefWidth="487.0" styleClass="projectlabel" text="" textFill="#202020">
+              <font>
+                <Font name="Consolas" size="14.0" />
+              </font>
+            </Label>
+            <HBox id="HBox" alignment="CENTER_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" HBox.hgrow="ALWAYS">
+              <children>
+                <Button fx:id="mBTN_Help" mnemonicParsing="false" styleClass="helpbutton" text="?" textFill="WHITE">
+                  <font>
+                    <Font name="Century Schoolbook Bold" size="22.0" />
+                  </font>
+                </Button>
+              </children>
+              <padding>
+                <Insets right="12.0" />
+              </padding>
+            </HBox>
+          </children>
+          <padding>
+            <Insets bottom="8.0" top="8.0" />
+          </padding>
+          <VBox.margin>
+            <Insets fx:id="x8" />
+          </VBox.margin>
+        </HBox>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="496.0" prefWidth="618.0" spacing="26.0" VBox.vgrow="ALWAYS">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="523.0" prefWidth="854.0" VBox.vgrow="SOMETIMES">
+              <children>
+                <SplitPane dividerPositions="0.3744131455399061" focusTraversable="true" prefHeight="42.0" prefWidth="618.0" HBox.hgrow="ALWAYS">
+                  <items>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                      <children>
+                        <VBox alignment="TOP_LEFT" prefHeight="208.0" prefWidth="304.0" spacing="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                            <HBox id="HBox" alignment="CENTER_LEFT" spacing="12.0" styleClass="border" VBox.vgrow="NEVER">
+                              <children>
+                                <Button fx:id="mBTN_Savior_OnOff" mnemonicParsing="false" text="ON">
+                                  <font>
+                                    <Font name="System Bold" size="14.0" fx:id="x3" />
+                                  </font>
+                                </Button>
+                                <Label fx:id="mLBL_Savior_Title" alignment="CENTER" contentDisplay="TEXT_ONLY" prefWidth="-1.0" text="Save-Game Savior Options" textAlignment="LEFT" textFill="BLACK" textOverrun="ELLIPSIS" underline="false">
+                                  <font>
+                                    <Font name="Arial Bold" size="18.0" fx:id="x2" />
+                                  </font>
+                                </Label>
+                              </children>
+                              <effect>
+                                <DropShadow height="25.03174603174603" radius="12.015873015873016" width="25.03174603174603" />
+                              </effect>
+                              <padding>
+                                <Insets bottom="6.0" left="6.0" top="6.0" fx:id="x4" />
+                              </padding>
+                            </HBox>
+                            <HBox id="mScrollPane_Savior" alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="304.0">
+                              <children>
+                                <Label fx:id="mLBL_Num_Saves" font="$x1" text="Number of saves:" textFill="BLACK">
+                                  <HBox.margin>
+                                    <Insets right="12.0" />
+                                  </HBox.margin>
+                                </Label>
+                                <TextField fx:id="mNumberSavesText" prefWidth="82.0" promptText="Number 3+" styleClass="projectlabel, border" />
+                              </children>
+                              <padding>
+                                <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                              </padding>
+                            </HBox>
+                            <Button fx:id="mBTN_OpenExplorer_Savior" mnemonicParsing="false" styleClass="button1" text="Open">
+                              <font>
+                                <Font name="Arial Black" size="14.0" fx:id="x13" />
+                              </font>
+                            </Button>
+                            <StackPane id="StackPane" alignment="BOTTOM_RIGHT" prefHeight="366.0" prefWidth="316.0">
+                              <children>
+                                <ScrollPane id="mScrollPane" fx:id="mScrollPane_Savior" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" prefHeight="-1.0" prefWidth="-1.0" vbarPolicy="ALWAYS">
+                                  <content>
+                                    <VBox id="mError_Vbox" fx:id="mSavior_Vbox" prefHeight="198.0" prefWidth="491.0" />
+                                  </content>
+                                </ScrollPane>
+                                <Button id="mBTN_Clear_NW_Messages" fx:id="mBTN_Clear_Savior_Messages" mnemonicParsing="false" text="X" textFill="RED">
+                                  <font>
+                                    <Font name="Arial Black" size="12.0" fx:id="x12" />
+                                  </font>
+                                  <StackPane.margin>
+                                    <Insets right="16.0" />
+                                  </StackPane.margin>
+                                </Button>
+                              </children>
+                              <VBox.margin>
+                                <Insets top="24.0" />
+                              </VBox.margin>
+                            </StackPane>
+                          </children>
+                        </VBox>
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="162.0">
+                      <children>
+                        <VBox alignment="TOP_LEFT" prefHeight="208.0" prefWidth="306.0" spacing="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <children>
+                            <HBox id="HBox" alignment="CENTER_LEFT" padding="$x4" spacing="16.0" styleClass="border" VBox.vgrow="NEVER">
+                              <children>
+                                <Label id="mLBL_SPM_Title" fx:id="mLBL_Networking_Title" font="$x2" text="Android Networking" textFill="#292929" underline="false" />
+                              </children>
+                              <effect>
+                                <DropShadow height="25.0" radius="12.0" width="25.0" />
+                              </effect>
+                            </HBox>
+                            <Label id="mLBL_Your_Port" fx:id="mLBL_Your_IP" font="$x3" text="Your Port:">
+                              <VBox.margin>
+                                <Insets left="6.0" top="12.0" />
+                              </VBox.margin>
+                            </Label>
+                            <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="200.0" styleClass="hboxProjectName" VBox.vgrow="NEVER">
+                              <children>
+                                <Label fx:id="mLBL_PC_IP" text="">
+                                  <font>
+                                    <Font name="Arial" size="16.0" fx:id="x5" />
+                                  </font>
+                                </Label>
+                              </children>
+                              <padding>
+                                <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                              </padding>
+                              <VBox.margin>
+                                <Insets bottom="12.0" left="6.0" right="6.0" />
+                              </VBox.margin>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0">
+                              <children>
+                                <Label fx:id="mLBL_SPM_Port" font="$x1" text="Port:" textFill="BLACK">
+                                  <HBox.margin>
+                                    <Insets left="6.0" />
+                                  </HBox.margin>
+                                </Label>
+                                <TextField id="mTex" fx:id="mPortID_TextField" prefWidth="106.0" />
+                                <HBox id="HBox" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="370.0" spacing="5.0">
+                                  <children>
+                                    <Button id="mBTN_OpenExplorer_Savior" fx:id="mBTN_OpenExplorer_Network" font="$x13" mnemonicParsing="false" styleClass="button1" text="Open">
+                                      <HBox.margin>
+                                        <Insets left="36.0" />
+                                      </HBox.margin>
+                                    </Button>
+                                  </children>
+                                </HBox>
+                              </children>
+                            </HBox>
+                            <HBox alignment="CENTER" fillHeight="true" prefHeight="-1.0" prefWidth="200.0" spacing="0.0" VBox.vgrow="NEVER">
+                              <children>
+                                <VBox id="VBox" alignment="TOP_CENTER" prefHeight="158.0" prefWidth="172.0" spacing="5.0" styleClass="floatingpanel">
+                                  <children>
+                                    <HBox id="HBox" alignment="CENTER" spacing="5.0" styleClass="border">
+                                      <children>
+                                        <Label fx:id="mLBL_PCSyncXML" font="$x2" text="PC Sync XML" textFill="BLACK" />
+                                      </children>
+                                      <padding>
+                                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" fx:id="x10" />
+                                      </padding>
+                                    </HBox>
+                                    <Button fx:id="mBTN_PCSync_OnOff" font="$x3" mnemonicParsing="false" text="ON">
+                                      <VBox.margin>
+                                        <Insets top="12.0" />
+                                      </VBox.margin>
+                                    </Button>
+                                  </children>
+                                  <padding>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" fx:id="x9" />
+                                  </padding>
+                                </VBox>
+                                <VBox id="VBox" alignment="CENTER_LEFT" padding="$x9" prefWidth="220.0" spacing="6.0" styleClass="floatingpanel" HBox.hgrow="NEVER">
+                                  <children>
+                                    <HBox id="HBox" alignment="CENTER" padding="$x10" spacing="5.0" styleClass="border">
+                                      <children>
+                                        <Label id="mLBL_SPM_Title" fx:id="mLBL_PotionMaker" font="$x2" text="Potion Maker Options" textFill="BLACK" underline="false" />
+                                      </children>
+                                    </HBox>
+                                    <VBox id="VBox" alignment="CENTER" spacing="5.0">
+                                      <children>
+                                        <Button id="mBTN_Savior_OnOff" fx:id="mBTN_SPM_OnOff" font="$x3" mnemonicParsing="false" prefWidth="-1.0" text="ON">
+                                          <VBox.margin>
+                                            <Insets bottom="12.0" />
+                                          </VBox.margin>
+                                        </Button>
+                                        <VBox id="VBox" alignment="CENTER_LEFT" spacing="5.0">
+                                          <children>
+                                            <CheckBox fx:id="mCHK_Quicksaves" mnemonicParsing="false" selected="true" text="Quicksaves">
+                                              <font>
+                                                <Font name="Arial Bold" size="14.0" fx:id="x11" />
+                                              </font>
+                                              <textFill>
+                                                <Color blue="0.000" green="0.000" red="0.200" fx:id="x7" />
+                                              </textFill>
+                                            </CheckBox>
+                                            <CheckBox fx:id="mCHK_Fullsaves" font="$x11" mnemonicParsing="false" selected="true" text="Full saves" textFill="$x7" />
+                                            <HBox id="HBox" alignment="CENTER" prefHeight="16.0" prefWidth="119.0" spacing="5.0">
+                                              <children>
+                                                <CheckBox fx:id="mCHK_OtherSaves" mnemonicParsing="false" text="">
+                                                  <font>
+                                                    <Font name="Arial" size="14.0" fx:id="x6" />
+                                                  </font>
+                                                  <HBox.margin>
+                                                    <Insets right="12.0" />
+                                                  </HBox.margin>
+                                                </CheckBox>
+                                                <TextField fx:id="mOtherSaveGame" minHeight="-Infinity" prefWidth="200.0" promptText="Other" text="" />
+                                              </children>
+                                            </HBox>
+                                          </children>
+                                        </VBox>
+                                      </children>
+                                      <padding>
+                                        <Insets bottom="6.0" left="6.0" right="6.0" top="12.0" />
+                                      </padding>
+                                    </VBox>
+                                  </children>
+                                  <HBox.margin>
+                                    <Insets left="120.0" />
+                                  </HBox.margin>
+                                </VBox>
+                              </children>
+                              <padding>
+                                <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                              </padding>
+                              <VBox.margin>
+                                <Insets bottom="12.0" left="4.0" right="4.0" top="12.0" />
+                              </VBox.margin>
+                            </HBox>
+                            <StackPane id="StackPane" alignment="BOTTOM_RIGHT" prefHeight="119.0" prefWidth="530.0">
+                              <children>
+                                <ScrollPane fx:id="mScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" prefHeight="-1.0" prefWidth="-1.0" vbarPolicy="ALWAYS">
+                                  <content>
+                                    <VBox fx:id="mError_Vbox" prefHeight="198.0" prefWidth="491.0" />
+                                  </content>
+                                </ScrollPane>
+                                <Button fx:id="mBTN_Clear_NW_Messages" font="$x12" mnemonicParsing="false" text="X" textFill="RED">
+                                  <StackPane.margin>
+                                    <Insets right="16.0" />
+                                  </StackPane.margin>
+                                </Button>
+                              </children>
+                            </StackPane>
+                          </children>
+                        </VBox>
+                      </children>
+                    </AnchorPane>
+                  </items>
+                </SplitPane>
+              </children>
+            </HBox>
+            <Button fx:id="mBTN_Start_Stop" mnemonicParsing="false" styleClass="button1" text="Start" textFill="#216600">
+              <font>
+                <Font name="System Bold" size="28.0" />
+              </font>
+            </Button>
+            <CheckBox fx:id="mCHK_AutoStart" font="$x5" mnemonicParsing="false" text="Auo-start on program start" textFill="WHITE" />
+            <HBox id="HBox" alignment="CENTER_LEFT" spacing="0.0" styleClass="hboxError" VBox.vgrow="NEVER">
+              <children>
+                <Label id="mLBL_NumberError" fx:id="mLBL_ErrorText" minHeight="-Infinity" prefHeight="-1.0" prefWidth="830.0" text="" textFill="RED" HBox.hgrow="ALWAYS">
+                  <font>
+                    <Font name="Tahoma" size="22.0" />
+                  </font>
+                </Label>
+              </children>
+              <padding>
+                <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+              </padding>
+            </HBox>
+          </children>
+          <padding>
+            <Insets fx:id="x28" />
+          </padding>
+        </VBox>
+      </children>
+      <padding>
+        <Insets fx:id="x38" />
+      </padding>
+    </VBox>
+  </children>
+</AnchorPane>

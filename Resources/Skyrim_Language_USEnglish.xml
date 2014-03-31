@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<strings>
+    <!-- filenames -->
+    <string key="quicksave_filename" value="quicksave" />
+    <string key="filename_extension_ess" value="ess" />
+    <string key="filename_extension_skse" value="skse" />
+    <string key="fullsave_filename_prefix" value="Save " />
+    <string key="savior_filename_prefix" value="GSave " />
+    <!-- Main Screen Strings -->
+    <string key="main_title" value="Skyrim Save-Game Watcher" />
+    <string key="main_button_directory" value="Directory" />
+    <string key="main_button_directory_tooltip" value="Set the savegame directory" />    
+    <string key="main_networking_title" value="Android Networking" />
+    <string key="main_pcsync_title" value="PC Sync XML" />
+    <string key="main_pmo_title" value="Potion Maker Options" />
+    <string key="main_start_button_start" value="Start" />
+    <string key="main_start_button_stop" value="Stop" />
+    <string key="main_autostart_checkbox" value="Auo-start on program start" />
+    <string key="main_autostart_checkbox_tooltip" value="Checked = Watcher starts on program start" />
+    <string key="main_button_on" value="ON" />
+    <string key="main_button_off" value="OFF" />
+    <string key="main_directory_chooser" value="Select Saves Directory" />
+    <string key="main_socket_closed" value="Socket closed" />
+    <string key="main_socket_waiting" value="Socket waiting...." />
+    <string key="main_port_label" value="Port:" />
+    <string key="main_your_ip_label" value="Your PC's IP Address:" />
+    <string key="main_checkbox_quicksaves" value="Quicksaves" />
+    <string key="main_checkbox_fullsaves" value="Full saves" />
+    <string key="main_checkbox_othersaves_hint" value="Enter other" />    
+    <string key="main_button_pcsync_open" value="Open XML In/Out Directory" />
+    
+    <!-- Savegame Savior String -->
+    <string key="main_savior_title" value="Save-Game Savior Options" />
+    <string key="main_num_saves" value="Number of saves:" />
+    <string key="main_num_saves_hint" value="Number 3+" />
+    <string key="main_button_savior_open" value="Open Savegame Directory" />
+    <string key="main_savior_update_delete_ok" value="Savegame deleted: " />
+    <string key="main_savior_update_delete_failed" value="Failed to delete savegame: " />
+    <string key="main_savior_update_rename_ok" value="Renamed quicksave to: " />
+    
+    <!-- In (request) messages -->
+	<string key="network_info_ping_received" value="Ping request received from Android." />
+	<string key="network_info_playerdatarequest_received" value="Alchemy data request received from Android." />
+	<string key="network_info_xmleffects_import_received" value="Effects XML import request  received from Android." />
+	<string key="network_info_xmlingredients_import_received" value="Ingredients XML import request  received from Android." />
+	<string key="network_info_xml_export_received" value="XML export request received." />
+	<string key="network_info_xml_export_file_saved" value="XML export request, file saved." />
+	<string key="network_info_xml_export_error" value="XML export request received. IO error." />
+	<string key="network_info_xml_received" value="Android received XML sent." />
+	<string key="network_info_playerdata_received" value="Android received Player Data sent." />
+	
+	<!-- Out (respnse) messages -->
+	<string key="network_info_ping_sent" value="Ping response sent to Android." />
+	<string key="network_info_playerdata_sent" value="Player data sent to android." />
+	<string key="network_info_playerdata_nodata_sent" value="No Player data response sent to android." />
+	<string key="network_info_playerdata_receivedPC" value="Player Data from Android received OK." />
+	<string key="network_info_playerdata_servererror" value="Player Data - server error occurred." />
+	<string key="network_info_playerdata_receivedAndroid" value="Android received Player Data sent." />
+	<string key="network_info_xml_filenotfound" value="No new file found to send to Android." />
+	<string key="network_info_xml_ings_sent" value="Ingredients XML sent to Android.  Response to import request." />
+	<string key="network_info_xml_effects_sent" value="Effects XML sent to Android.  Response to import request." />
+	
+	<!-- Socket/ZIP Error messages -->
+	<string key="network_error_ioexception" value="An IO error occurred with: " />
+	<string key="network_error_processing" value="An error occurred with: " />
+	
+	<string key="network_error_nwmessage" value="Invalid Network Message" />
+	<string key="network_error_filename" value="Invalid filename" />
+	<string key="network_error_export_path" value="Invalid export path" />
+	<string key="network_error_write_access" value="Write access not allowed" />
+	<string key="network_error_zip_rw_stream" value="Error reading or writing to the ZIP stream" />
+	<string key="network_error_zip_write" value="Error writing the XML data to file" />
+	<string key="network_error_zip_read" value="Error reading the XML file to send" />
+	<string key="network_error_zip_entry" value="Error reading/writing the next ZIP entry" />
+	<string key="network_error_import_xmlfile" value="Error with the XML file Android is importing" />
+	<string key="network_error_zip_stream" value="General error with the ZIP stream" />
+
+    <!-- UI Error messages -->
+    <string key="error_userdata_read" value="Failed to read user-save data!" />
+    <string key="error_userdata_save" value="Failed to save user-save data!" />
+    <string key="error_number_saves_notset" value="Number of saves not set!" />
+    <string key="error_number_saves_ltthree" value="Number of saves must be at least 3!" />
+    <string key="error_number_saves_notint" value="Number of saves not valid integer!" />
+    <string key="error_invalid_port" value="Invalid port number.  Must be 4 digits!" />
+    <string key="error_invalid_other_filename" value="No other filename entered!" />
+    <string key="error_directory_notselected" value="No directory selected!" />
+    <string key="error_watcher_closed" value="Directory watcher force closed!!" />
+    <string key="error_unknown_host" value="Unknown Host Exception!!" />
+    <string key="error_invalid_response" value="Invalid data received from Android!!" />
+    <string key="error_android_timeout" value="Android timed out waiting for data!!" />
+    <string key="error_android_bad_data" value="Android reports invalid XML data!!" />
+    <string key="error_exception" value="An exception occurred: " />
+    <string key="error_help_file" value="Cannot open Resources\HelpFiles\MainHelpFile.html" />
+    <string key="error_start_no_functions_on" value="Start cancelled - No functions turned ON!" />
+    <string-array key="months_of_year">    
+    	<item value="Jan" />
+    	<item value="Feb" />
+    	<item value="Mar" />
+    	<item value="Apr" />
+    	<item value="May" />
+    	<item value="Jun" />
+    	<item value="Jul" />
+    	<item value="Aug" />
+    	<item value="Sep" />
+    	<item value="Oct" />
+    	<item value="Nov" />
+    	<item value="Dec" />
+    </string-array>
+    <string-array key="days_of_week">  
+    	<item value="Sun" />  
+    	<item value="Mon" />
+    	<item value="Tue" />
+    	<item value="Wed" />
+    	<item value="Thu" />
+    	<item value="Fri" />
+    	<item value="Sat" />
+    </string-array>
+</strings>

@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Savegame Savior Help Page</title>
+<style>
+<!--
+body         { font-family: Tahoma }
+-->
+</style>
+</head>
+<body bgcolor="#00002B" text="#FFFFFF" link="#CCFFFF" vlink="#F2D7FF">
+<table border="2" width="100%" cellspacing="4" cellpadding="6" bordercolor="#000000" bgcolor="#000000">
+	<tr>
+		<td bordercolor="#CCCCCC" bgcolor="#003399">
+		<font face="Arial Black" size="6" color="#FFE7CE">Savegame Savior Help Page</font></td>
+	</tr>
+</table>
+<table border="1" width="100%" cellspacing="3" cellpadding="6">
+	<tr>
+		<td>
+			<b><font size="4" color="#FFC5AE">ON/OFF Toggle Button</font></b><blockquote>
+				<table border="0" cellpadding="4" width="461">
+					<tr>
+						<td width="51">
+				<input type="button" value="OFF" name="B8" style="font-size: 14pt; color: #FF0000; font-family:monospace; font-weight:bold"></td>
+						<td>Savegame Savior is OFF.&nbsp; Click it to 
+			start it.</td>
+					</tr>
+					<tr>
+						<td width="51">
+						<input type="button" value="ON " name="B7" style="font-size: 14pt; color: #008000; font-family:monospace; font-weight:bold; text-align:center"></td>
+						<td>Savegame Savior is ON.&nbsp; Click it to stop it.</td>
+					</tr>
+				</table>
+			</blockquote>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<b><font size="4" color="#FFC5AE">Number of saves</font></b><font color="#FFFFDF">: </font>
+		<input type="text" name="T1" size="20"><blockquote>
+			<p><font color="#FFFFFF">Enter the number of saves you want to keep.&nbsp; 
+		The minimum is 3.</font></p>
+		</blockquote>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<b><font size="4" color="#FFC5AE">How it works</font></b><blockquote>
+			<p>The program uses a Directory Watcher to wait until a new file is 
+			created in the savegame directory.&nbsp; It looks specifically for 
+			the <font face="Courier New" color="#CCFFFF">quicksave.ess</font> 
+			file to be created.</p>
+			<p>However, this filename is not hard-coded.&nbsp; I put the 
+			filenames and extensions used by this program in the
+			<a href="MainHelpFile.html#Languages">Language</a> file, just in case 
+			they might be different in other languages.</p>
+			<p><font color="#FFFFFF">Each time the program detects a new 
+			<b>quicksave</b>, it will rename the </font> <font color="#99FF99">
+			quicksave.ess</font><font color="#FFFFFF"> and </font> 
+			<font color="#99FF99">quicksave.skse</font><font color="#FFFFFF"> 
+			(if you installed SKSE) 
+			files to a filename generated from two things:</font></p>
+			<p>The first part comes from the following item in the language 
+			file:&nbsp; <font face="Courier New" color="#F2D7FF">&lt;string 
+			key=&quot;savior_filename_prefix&quot; value=&quot;</font><font face="Courier New" color="#FF8888">gamesave_</font><font face="Courier New" color="#F2D7FF">&quot; 
+			/&gt;</font></p>
+			<p>You can modify the <font face="Courier New" color="#FF8888">
+			gamesave_</font> part to anything you would like (that includes 
+			characters allowed in a filename).</p>
+			<p>The scond part is the system date and time the save occurred.&nbsp; 
+			Here are examples of the filenames created:</p>
+			<ul>
+				<li><font face="Courier New">gamesave_Fri Jan 24 15_39_34 PST 
+				2014.ess </font></li>
+				<li><font face="Courier New">gamesave_Fri Jan 24 15_39_34 PST 
+				2014.skse</font></li>
+			</ul>
+			<p>The program keeps track of all of the renamed files, and when it 
+			reaches your
+		<b><font size="4" color="#FFC5AE">Number of saves</font></b> limit, it 
+			deletes the oldest one when renaming a new one.</p>
+		</blockquote>
+		<p><font color="#FFC5AE" size="4"><b>One Problem:</b></font></p>
+		<blockquote>
+			<p>I found that the game will sometimes fail to automatically reload 
+			one of these saves when I die.&nbsp; It will just stay on the screen 
+			showing my dead body.&nbsp; So, I just have to do the reload 
+			manually, by hitting the ESC key and loading the last save.</p>
+		</blockquote>
+		</td>
+	</tr>
+</table>
+
+<p><font size="5" color="#FFC5AE">Links:</font></p>
+<blockquote>
+	<p><a href="MainHelpFile.html">Main screen</a></p>
+	<p><a href="spm.html">Skyrim Potion Maker</a></p>
+	<p><a href="pcsync.html">PC Sync XML</a></p>
+</blockquote>
+
+</body>
+
+</html>

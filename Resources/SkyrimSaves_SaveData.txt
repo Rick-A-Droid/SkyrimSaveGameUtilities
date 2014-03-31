@@ -1,0 +1,11 @@
+LANGUAGE_XML_FILE:Skyrim_Language_USEnglish.xml
+SAVE_DIR:C:\Users\Rick\Documents\My Games\Skyrim\Saves
+NUM_SAVES:7
+STARTUP:false
+RUN_SAVIOR:true
+RUN_PCSYNC:true
+RUN_SPM:true
+SPM_DO_QUICKSAVES:true
+SPM_DO_FULLSAVES:true
+SPM_DO_OTHERSAVES:false
+PORT_NUMBER:7245
